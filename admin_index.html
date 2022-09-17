@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>$$User$$</title>
+    <link rel="stylesheet" href="admin_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+
+<!-- All the inputs -->
+    <div class="container">
+        <h1 id="welcome" style="text-align: center; margin-bottom: 15px;">Welcome, <span id="admin_name" style="color: #FF0000;">Admin!</span></h1>
+            <div class="row">
+                <input type="text" placeholder="Enter your user id" id="admin-id">
+                <input type="password" placeholder="Password" id="admin-password">
+            </div>
+                <h1 id="heading">Enter meeting details..</h1>
+            <div class="event_details">
+                <input type="text" placeholder="Meeting Name" id="nameOfMeeting">
+                <input type="date" id="dateOfMeeting">
+                <input type="time" id="timeOfMeeting">
+            </div>
+            <div class="description">
+                <form>
+                    <textarea placeholder="Description of the meeting" id="descriptionOfMeeting"></textarea>
+                </form>
+            </div>
+            <div class="event-details-upload">
+                <h3>Upload CSV</h3>
+                <input type="file">
+            </div>
+            <div class="send">
+                <button id="send">Send</button>
+            </div>
+            
+    </div>
+    <script src="admin_script.js"></script>
 </body>
 </html>
