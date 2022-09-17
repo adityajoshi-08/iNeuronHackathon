@@ -1,0 +1,121 @@
+body{
+    width: 80%;
+    margin: 0 10%;
+    padding: 0%;
+    background-color: black;
+    color: white;
+    font-family: "Poppins" , sans-serif;
+}
+
+.container{
+    background-color: #3d0000b3;
+    position: absolute;
+    bottom: 0px;
+    width: 80%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    /* margin: 0; */
+}
+nav ul li{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.navlink{
+    padding: 0 5px;
+    align-items: center;
+
+}
+nav ul .link_block{
+    margin: 0%;
+    padding: 10px 90px;
+    border-radius: 10px;
+    color: white;
+    /* border: 1px thistle white; */
+
+}
+
+.link_block:hover{
+    /* borders-radius: 10px; */
+    cursor: pointer;
+    color: white;
+    background-color: rgba(240, 255, 255, 0.377);
+}
+.meeting{
+    background-color: rgba(240, 255, 255, 0.377);
+    font-weight: bold;
+}
+.dashboard{
+    background-color: rgba(240, 255, 255, 0.377);
+    font-weight: bold;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+}
+.img{
+    width: 80px;
+    border-radius: 40px;
+    /* margin: 5px; */
+    margin-left: 10px;
+}
+.img2{
+    width: 150px;
+}
+
+hr{
+    margin-top: -25px;
+}
+.hrow{
+    margin-top: 20px;
+}
+.meethead{
+    display: flex;
+    justify-content: space-between;
+}
+.meet2:hover{
+    background-color: rgba(240, 255, 255, 0.377);
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+.image img{
+    width: 200px;
+    border-radius: 50px;
+}
+.image { grid-area: image;}
+.detail { grid-area: detail;}
+.grid-container{
+    display: grid;
+    grid-template-areas: 'image detail';
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+.useroption{
+    display: flex;
+    justify-content: space-around;
+}
+.useroption h3{
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.useroption h3:hover{
+    /* background-color: rgba(240, 255, 255, 0.377); */
+    color: white;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
