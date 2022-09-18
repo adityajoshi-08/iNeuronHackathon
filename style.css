@@ -142,3 +142,8 @@ hr{
     cursor: pointer;
     border-bottom: 2px solid white;
 }
+.row-for-meeting{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
