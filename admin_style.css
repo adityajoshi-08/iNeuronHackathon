@@ -17,16 +17,37 @@
     margin-bottom: 25px;
     text-align: center;
 }
-
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+.img{
+    width: 80px;
+    border-radius: 40px;
+    /* margin: 5px; */
+    margin-left: 10px;
+}
+.img2{
+    width: 150px;
+    height: 100px;
+}
 .row{
     display: flex;
     justify-content: space-around;
 }
 .row input{
     padding: 15px 15%;
-    border: 1px solid white;
-    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    /* border: 1px solid white; */
+    border-radius: 5px;
     text-align: center;
+    border: none;
+}
+.row input:hover{
+    border-bottom: 2px solid white;
 }
 
 .event_details{
@@ -62,18 +83,68 @@ form textarea{
 }
 .send{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    /* flex-direction: column; */
 }
 #send{
     background-color: #950101;
     border: none;
-    border-radius: 10px;
-    padding: 5px 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 50px;
     margin: auto; 
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 #send:hover{
     cursor: pointer;
 }
 
+.meeting textarea{
+    width: 100%;
+    height: 6vh;
+    border: none;
+    font-size: 40px;
+    color: white;
+    box-sizing: border-box;
+    text-align: left;
+    resize: none;
+    overflow: hidden;
+}
+.description textarea{
+    width: 100%;
+    height: 500px;
+    border: none;
+    font-size: 30px;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    resize: none;
+    
+}
+.datetimedetail{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 3px;
+    font-size: 30px;
+}
+.datetime{
+    display: flex;
+    justify-content: space-between;
+}
+.datetime input{
+    margin: 5px;
+    width: 180px;
+    font-size: 20px;
+    background-color: azure;
+    color: black;
+}
+.event-details-upload{
+    background-color: azure;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}

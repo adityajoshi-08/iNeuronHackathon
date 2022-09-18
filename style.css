@@ -60,7 +60,7 @@ nav ul .link_block{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 .img{
     width: 80px;
@@ -70,10 +70,11 @@ nav ul .link_block{
 }
 .img2{
     width: 150px;
+    height: 100px;
 }
 
 hr{
-    margin-top: -25px;
+    margin-top: -5px;
 }
 .hrow{
     margin-top: 20px;
@@ -118,4 +119,26 @@ hr{
     color: white;
     border-bottom: 3px solid white;
     cursor: pointer;
+}
+.mailtemp p{
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+.mail{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 40px;
+    align-items: center;
+}
+.mail button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 18px;
+    /* padding: 2px 5px; */
+}
+.mail button:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
 }
