@@ -15,41 +15,23 @@ function updateMeetingDetails(){
     console.log(1)
     meetings = [
     {
-        meetingTopic : "Discussion Panel",
-        meetingLink : "meet.google.com"
+        meetingLink : "meet.google.com",
+        meetingTopic : "Discussion Panel"
     },
     {
-        meetingTopic : "Beating Panel",
-        meetingLink : "meet.google.com"
-    },
-    {
-        meetingTopic : "Beating Panel",
-        meetingLink : "meet.google.com"
-    },
-    {
-        meetingTopic : "Beating Panel",
-        meetingLink : "meet.google.com"
-    },
-    {
-        meetingTopic : "Beating Panel",
-        meetingLink : "meet.google.com"
-    },
-    {
-        meetingTopic : "Beating Panel",
-        meetingLink : "meet.google.com"
-    },
-    {
-        meetingTopic : "Beating Panel",
-        meetingLink : "meet.google.com"
+        meetingLink : "meet.google.com",
+        meetingTopic : "Open-source"
     }
+
 ]
 
 meetings.forEach(meet => {
+    document.getElementById("meetings").innerHTML = ``;
    let x = document.createElement('div')
    x.className = "row-for-meeting"
    x.innerHTML += `
+   <a href="${meet.meetingLink}"><button>Joining Link</button></a>
            <h2>${meet.meetingTopic}</h2>
-<a href="${meet.meetingLink}"><button>Joining Link</button></a>
    `;
    x.querySelector("h2").style.color = "#950101"
    x.querySelector("button").style.padding = "8px 35px"
