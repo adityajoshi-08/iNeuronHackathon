@@ -11,27 +11,52 @@ let array_admin = [
     }
 ]
 
-function getMeetingDetails(){
-    let meeting_details = {
-    "nameOfMeeting" : document.getElementById("nameOfMeeting"),
-    "timeOfMeeting" : document.getElementById("timeOfMeeting"),
-    "dateOfMeeting" : document.getElementById("dateOfMeeting"),
-    "descriptionOfMeeting" : document.getElementById("descriptionOfMeeting")
+function updateMeetingDetails(){
+    console.log(1)
+    meetings = [
+    {
+        meetingTopic : "Discussion Panel",
+        meetingLink : "meet.google.com"
+    },
+    {
+        meetingTopic : "Beating Panel",
+        meetingLink : "meet.google.com"
+    },
+    {
+        meetingTopic : "Beating Panel",
+        meetingLink : "meet.google.com"
+    },
+    {
+        meetingTopic : "Beating Panel",
+        meetingLink : "meet.google.com"
+    },
+    {
+        meetingTopic : "Beating Panel",
+        meetingLink : "meet.google.com"
+    },
+    {
+        meetingTopic : "Beating Panel",
+        meetingLink : "meet.google.com"
+    },
+    {
+        meetingTopic : "Beating Panel",
+        meetingLink : "meet.google.com"
     }
+]
+
+meetings.forEach(meet => {
+   let x = document.createElement('div')
+   x.className = "row-for-meeting"
+   x.innerHTML += `
+           <h2>${meet.meetingTopic}</h2>
+<a href="${meet.meetingLink}"><button>Joining Link</button></a>
+   `;
+   x.querySelector("h2").style.color = "#950101"
+   x.querySelector("button").style.padding = "8px 35px"
+   x.querySelector("button").style.borderRadius = "10px"
+   x.querySelector("button").style.border = "none"
+   document.getElementById("meetings").appendChild(x)
+})
 }
 
-
-function send(){
-    let adminUserId = document.getElementById("admin-id").value
-    let password = document.getElementById("admin-password").value
-    // verification check
-
-    array_admin.forEach(admin => {
-        if (admin.username == adminUserId && admin.password != password){
-            alert("Wrong password!!")
-        }
-    })
-
-
-}
-document.getElementById("send").addEventListener('click', send);
+document.getElementById("refresh").addEventListener('click',updateMeetingDetails);
